@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Positioning Property Solution</title>
+    <style>
+      /*Follow the instructions in the comments below to complete this practice*/
+      .static {
+        /*1. Add the position property and set the value to "static".*/
+        position: static;
+        /*2. Add the width property and set the value to "300px".*/
+        width: 300px;
+        /*3. Add the padding property and set the value to "10px".*/
+        padding: 10px;
+        /*4. Add the border property and set the value to "2px solid darkcyan".*/
+        border: 2px solid darkcyan;
+      }
+
+      .relative {
+        /*1. Add the position property and set the value to "relative".*/
+        position: relative;
+        /*2. Add the width property and set the value to "300px".*/
+        width: 300px;
+        /*3. Add the padding property and set the value to "10px".*/
+        padding: 10px;
+        /*4. Add the left property and set the value to "40px".*/
+        left: 40px;
+        /*5. Add the top property and set the value to "-30px".*/
+        top: -30px;
+        /*6. Add the border property and set the value to "2px solid lawngreen".*/
+        border: 2px solid lawngreen;
+        /*7. Add the background color property and set the value to "rgb(184, 213, 241)".*/
+        background-color: rgb(184, 213, 241);
+      }
+
+      .fixed {
+        /*1. Add the position property and set the value to "fixed".*/
+        position: fixed;
+        /*2. Add the width property and set the value to "300px".*/
+        width: 300px;
+        /*3. Add the padding property and set the value to "10px".*/
+        padding: 10px;
+        /*4. Add the right property and set the value to "0px".*/
+        right: 0px;
+        /*5. Add the bottom property and set the value to "0px".*/
+        bottom: 0px;
+        /*6. Add the border property and set the value to "2px solid steelblue".*/
+        border: 2px solid steelblue;
+        /*7. Add the background color property and set the value to "darkgrey".*/
+        background-color: darkgrey;
+      }
+
+      .absolute {
+        /*1. Add the position property and set the value to "absolute".*/
+        position: absolute;
+        /*2. Add the width property and set the value to "300px".*/
+        width: 300px;
+        /*3. Add the padding property and set the value to "10px".*/
+        padding: 10px;
+        /*4. Add the top property and set the value to "1000px".*/
+        top: 1000px;
+        /*5. Add the right property and set the value to "50px".*/
+        right: 50px;
+        /*6. Add the border property and set the value to "2px solid #73ad21".*/
+        border: 2px solid #73ad21;
+        /*7. Add the background color property and set the value to "lightskyblue".*/
+        background-color: lightskyblue;
+      }
+
+      .sticky {
+        /*1. Add the position property and set the value to "-webkit-sticky".*/
+        position: -webkit-sticky;
+        /*2. Add the position property and set the value to "sticky".*/
+        position: sticky;
+        /*3. Add the width property and set the value to "300px".*/
+        width: 300px;
+        /*4. Add the padding property and set the value to "10px".*/
+        padding: 10px;
+        /*5. Add the top property and set the value to "0px".*/
+        top: 0px;
+        /*6. Add the left property and set the value to "50px".*/
+        left: 50px;
+        /*7. Add the border property and set the value to "2px solid #4caf50".*/
+        border: 2px solid #4caf50;
+        /*8. Add the background color property and set the value to "#cae8cada".*/
+        background-color: #cae8cada;
+      }
+
+      /*Add a CSS rule that selects the <pre> elements.*/
+      pre {
+        /*1. Add the font family property and set the value to "serif".*/
+        font-family: serif;
+        /*1. Add the "white-space" property and set the value to "pre-line". This will allow the text to wrap in the browser window.*/
+        white-space: pre-line;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>CSS Positioning Property Solution</h1>
+    <h2>position: sticky;</h2>
+    <div class="sticky">This element is <b>sticky</b>.</div>
+    <pre>
+        Cupcake ipsum dolor sit amet jelly. Jelly oat cake jelly-o tiramisu chocolate cake ice cream powder lemon drops. Jelly beans muffin gummi bears sugar plum gingerbread. Lemon drops candy canes jelly lollipop candy pie chocolate cake apple pie candy. Dessert liquorice pastry brownie ice cream sesame snaps biscuit bonbon. Icing fruitcake gingerbread chocolate cake carrot cake. Caramels sweet roll chocolate bar bonbon gummi bears sesame snaps pie.
+
+        Marzipan pie cheesecake tiramisu. Halvah lollipop pie chupa chups chocolate cake ice cream. Tiramisu tiramisu bonbon sweet caramels pastry chocolate wafer. Gummi bears gingerbread tart carrot cake. Fruitcake carrot cake carrot cake lemon drops topping. Halvah caramels gingerbread. Bonbon danish biscuit cookie gummi bears wafer. Powder macaroon powder. Muffin icing muffin chupa chups.
+        
+        Muffin jelly chocolate cupcake carrot cake tootsie roll oat cake cotton candy. Pudding apple pie topping brownie. Topping cheesecake candy canes. Lollipop icing tart bonbon danish. Liquorice sweet roll jelly sesame snaps. Jelly gingerbread macaroon lollipop jelly-o dragée gummi bears caramels. Muffin tootsie roll muffin oat cake oat cake gummi bears candy canes jelly-o. Halvah chocolate cake lemon drops.
+    </pre>
+    <h2>position: relative;</h2>
+    <pre>
+        Marzipan pie cheesecake tiramisu. Halvah lollipop pie chupa chups chocolate cake ice cream. Tiramisu tiramisu bonbon sweet caramels pastry chocolate wafer. Gummi bears gingerbread tart carrot cake. Fruitcake carrot cake carrot cake lemon drops topping. Halvah caramels gingerbread. Bonbon danish biscuit cookie gummi bears wafer. Powder macaroon powder. Muffin icing muffin chupa chups.
+
+        Muffin jelly chocolate cupcake carrot cake tootsie roll oat cake cotton candy. Pudding apple pie topping brownie. Topping cheesecake candy canes. Lollipop icing tart bonbon danish. Liquorice sweet roll jelly sesame snaps. Jelly gingerbread macaroon lollipop jelly-o dragée gummi bears caramels. Muffin tootsie roll muffin oat cake oat cake gummi bears candy canes jelly-o. Halvah chocolate cake lemon drops.
+        
+        Jelly-o macaroon bonbon gummies gummies biscuit lollipop. Jelly beans gummi bears croissant. Sweet roll fruitcake cake cake. Fruitcake sugar plum wafer cheesecake chocolate bar tart bonbon sesame snaps. Candy canes jelly beans candy canes jelly. Topping pudding fruitcake cookie marshmallow gingerbread wafer. Tootsie roll pudding sweet roll fruitcake gummies dragée. Bear claw jelly beans jelly beans.
+    </pre>
+    <div class="static">This element is <b>static</b>.</div>
+
+    <h2>position: relative;</h2>
+    <pre>
+        Muffin jelly chocolate cupcake carrot cake tootsie roll oat cake cotton candy. Pudding apple pie topping brownie. Topping cheesecake candy canes. Lollipop icing tart bonbon danish. Liquorice sweet roll jelly sesame snaps. Jelly gingerbread macaroon lollipop jelly-o dragée gummi bears caramels. Muffin tootsie roll muffin oat cake oat cake gummi bears candy canes jelly-o. Halvah chocolate cake lemon drops.
+
+        Jelly-o macaroon bonbon gummies gummies biscuit lollipop. Jelly beans gummi bears croissant. Sweet roll fruitcake cake cake. Fruitcake sugar plum wafer cheesecake chocolate bar tart bonbon sesame snaps. Candy canes jelly beans candy canes jelly. Topping pudding fruitcake cookie marshmallow gingerbread wafer. Tootsie roll pudding sweet roll fruitcake gummies dragée. Bear claw jelly beans jelly beans.
+        
+        Sweet cookie tiramisu soufflé chocolate danish. Powder chupa chups ice cream tootsie roll pastry cake. Pastry pie marzipan tootsie roll pie tart dessert jelly-o. Topping lemon drops bear claw jelly beans. Danish lollipop chocolate bar danish halvah sugar plum gummi bears cheesecake. Pudding gummies soufflé sugar plum dessert donut cake fruitcake candy.
+    </pre>
+    <div class="relative">This element is <b>relative</b>.</div>
+
+    <h2>position: absolute;</h2>
+    <pre>
+        Muffin jelly chocolate cupcake carrot cake tootsie roll oat cake cotton candy. Pudding apple pie topping brownie. Topping cheesecake candy canes. Lollipop icing tart bonbon danish. Liquorice sweet roll jelly sesame snaps. Jelly gingerbread macaroon lollipop jelly-o dragée gummi bears caramels. Muffin tootsie roll muffin oat cake oat cake gummi bears candy canes jelly-o. Halvah chocolate cake lemon drops.
+
+        Jelly-o macaroon bonbon gummies gummies biscuit lollipop. Jelly beans gummi bears croissant. Sweet roll fruitcake cake cake. Fruitcake sugar plum wafer cheesecake chocolate bar tart bonbon sesame snaps. Candy canes jelly beans candy canes jelly. Topping pudding fruitcake cookie marshmallow gingerbread wafer. Tootsie roll pudding sweet roll fruitcake gummies dragée. Bear claw jelly beans jelly beans.
+        
+        Sweet cookie tiramisu soufflé chocolate danish. Powder chupa chups ice cream tootsie roll pastry cake. Pastry pie marzipan tootsie roll pie tart dessert jelly-o. Topping lemon drops bear claw jelly beans. Danish lollipop chocolate bar danish halvah sugar plum gummi bears cheesecake. Pudding gummies soufflé sugar plum dessert donut cake fruitcake candy.
+        
+    </pre>
+    <div class="absolute">This element is <b>absolute</b>.</div>
+
+    <h2>position: fixed;</h2>
+    <pre>
+        Marzipan pie cheesecake tiramisu. Halvah lollipop pie chupa chups chocolate cake ice cream. Tiramisu tiramisu bonbon sweet caramels pastry chocolate wafer. Gummi bears gingerbread tart carrot cake. Fruitcake carrot cake carrot cake lemon drops topping. Halvah caramels gingerbread. Bonbon danish biscuit cookie gummi bears wafer. Powder macaroon powder. Muffin icing muffin chupa chups.
+
+        Muffin jelly chocolate cupcake carrot cake tootsie roll oat cake cotton candy. Pudding apple pie topping brownie. Topping cheesecake candy canes. Lollipop icing tart bonbon danish. Liquorice sweet roll jelly sesame snaps. Jelly gingerbread macaroon lollipop jelly-o dragée gummi bears caramels. Muffin tootsie roll muffin oat cake oat cake gummi bears candy canes jelly-o. Halvah chocolate cake lemon drops.
+        
+        Jelly-o macaroon bonbon gummies gummies biscuit lollipop. Jelly beans gummi bears croissant. Sweet roll fruitcake cake cake. Fruitcake sugar plum wafer cheesecake chocolate bar tart bonbon sesame snaps. Candy canes jelly beans candy canes jelly. Topping pudding fruitcake cookie marshmallow gingerbread wafer. Tootsie roll pudding sweet roll fruitcake gummies dragée. Bear claw jelly beans jelly beans
+    </pre>
+    <div class="fixed">This element is <b>fixed</b>.</div>
+  </body>
+</html>

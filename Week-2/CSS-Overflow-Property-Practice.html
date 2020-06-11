@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Overflow Property Practice</title>
+    <style>
+      /*Follow the instructions in the comments to complete this practice.*/
+      div.scroll {
+        /*1. Add the width property and set the value to "200px".*/
+        property: value;
+        /*2. Add the height property and set the value to "100px".*/
+        property: value;
+        /*3. Add the overflow property and set the value to "scroll".*/
+        property: value;
+      }
+
+      div.hidden {
+        /*1. Add the width property and set the value to "200px".*/
+        property: value;
+        /*2. Add the height property and set the value to "100px".*/
+        property: value;
+        /*3. Add the overflow property and set the value to "hidden".*/
+        property: value;
+      }
+
+      div.hidden-img {
+        /*1. Add the width property and set the value to "200px".*/
+        property: value;
+        /*2. Add the height property and set the value to "200px".*/
+        property: value;
+        /*3. Add the overflow property and set the value to "hidden".*/
+        property: value;
+        /*4. Add the border-top-right-radius property and set the value to "50%".*/
+        property: value;
+        /*5. Add the border-top-left-radius property and set the value to "50%".*/
+        property: value;
+        /*6. Add the border-bottom-right-radius property and set the value to "50%".*/
+        property: value;
+      }
+
+      div.auto {
+        /*1. Add the width property and set the value to "200px".*/
+        property: value;
+        /*2. Add the height property and set the value to "100px".*/
+        property: value;
+        /*3. Add the overflow property and set the value to "auto".*/
+        property: value;
+      }
+
+      div.visible {
+        /*1. Add the width property and set the value to "200px".*/
+        property: value;
+        /*2. Add the height property and set the value to "100px".*/
+        property: value;
+        /*3. Add the overflow property and set the value to "visible".*/
+        property: value;
+      }
+
+      /*Create a CSS rule that selects the <span> element with the class of property assigned.*/
+      selector {
+        /*Add the color property and set the value to "#f82706".*/
+        property: value;
+      }
+
+      /*Create a CSS rule that selects the <span> element with the class of value assigned.*/
+      selector {
+        /*Add the color property and set the value to "#2b18cd".*/
+        property: value;
+      }
+
+      /*Create a CSS rule that selects the <img> element.*/
+      selector {
+        /*Add the width property and set the value to "220px".*/
+        property: value;
+      }
+
+      /*Create a CSS rule that selects the <div> elements.*/
+      selector {
+        /*Add the background color property and set the value to "lightblue".*/
+        property: value;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Follow the instructions in the CSS code.-->
+    <h1>The <span class="property">overflow</span> Property</h1>
+
+    <p>
+      The <span class="property">overflow</span> property specifies whether to
+      clip content or to add scrollbars when an element's content is too big to
+      fit in a specified area.
+    </p>
+
+    <h2>
+      <span class="property">overflow</span>: <span class="value">scroll</span>;
+    </h2>
+    <div class="scroll">
+      With the value set to scroll the overflow is clipped, and a scrollbar is
+      added to see the rest of the content. With this value, the space for
+      scroll bar will always appear.
+
+      <img
+        src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
+        alt="Grove of trees"
+      />
+    </div>
+
+    <h2>
+      <span class="property">overflow</span>: <span class="value">hidden</span>;
+    </h2>
+
+    <div class="hidden">
+      With the hidden value, the overflow is clipped, and the rest of the
+      content outside of the box will be invisible. This can make an image a
+      circle. Notice how the text is cut of when it reaches the bottom of the
+      box.
+      <img
+        src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
+        alt="Grove of trees"
+      />
+    </div>
+
+    <h2>
+      <span class="property">overflow</span>: <span class="value">hidden</span>;
+      On an Image
+    </h2>
+
+    <div class="hidden-img">
+      <img
+        src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
+        alt="Grove of trees"
+      />
+    </div>
+
+    <h2>
+      <span class="property">overflow</span>: <span class="value">auto</span>;
+    </h2>
+    <div class="auto">
+      Auto is similar to scroll, except with the value set to auto, the scroll
+      bars only appear when needed, if the content exceeds the bounds of the
+      box.
+      <img
+        src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
+        alt="Grove of trees"
+      />
+    </div>
+
+    <h2>
+      <span class="property">overflow</span>:
+      <span class="value">visible</span>; (default)
+    </h2>
+    <div class="visible">
+      This is the default value for the overflow property. The overflow is not
+      clipped, so the content renders outside the element's box. Notice that the
+      text and image extend below the box boundaries.
+      <img
+        src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86"
+        alt="Grove of trees"
+      />
+    </div>
+  </body>
+</html>

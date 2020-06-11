@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Float Property Practice</title>
+    <style>
+      /*Follow the instructions in the comments below to complete this practice.*/
+      * {
+        /*1. Add the box-sizing property and set the value to "border-box".*/
+        property: value;
+      }
+
+      .header,
+      .footer {
+        /*1. Add the background-color property and set the value to "grey".*/
+        property: value;
+        /*2. Add the color property and set the value to "white".*/
+        property: value;
+        /*3. Add the padding property and set the value to "15px".*/
+        property: value;
+      }
+
+      .column {
+        /*1. Add the float property and set the value to "left".*/
+        property: value;
+        /*2. Add the padding property and set the value to "15px".*/
+        property: value;
+      }
+
+      .clearfix::after {
+        /*1. Add the content property and set the value to two quotation marks("").*/
+        property: value;
+        /*2. Add the clear property and set the value to "both".*/
+        property: value;
+        /*3. Add the display property and set the value to "table".*/
+        property: value;
+      }
+
+      .menu {
+        /*1. Add the width property and set the value to "25%".*/
+        property: value;
+      }
+
+      .content {
+        /*1. Add the width property and set the value to "75%".*/
+        property: value;
+      }
+
+      .menu ul {
+        /*1. Add the list-style-type property and set the value to "none".*/
+        property: value;
+        /*2. Add the margin property and set the value to "0".*/
+        property: value;
+        /*3. Add the padding property and set the value to "0".*/
+        property: value;
+      }
+
+      .menu li {
+        /*1. Add the padding property and set the value to "8px".*/
+        property: value;
+        /*2. Add the margin-bottom property and set the value to "8px".*/
+        property: value;
+        /*3. Add the background-color property and set the value to "#33b5e5".*/
+        property: value;
+        /*4. Add the color property and set the value to "#ffffff".*/
+        property: value;
+      }
+
+      .menu li:hover {
+        /*1. Add the background-color property and set the value to "#0099cc".*/
+        property: value;
+      }
+
+      .menu li:active {
+        /*1. Add the background-color property and set the value to "#83b5c6".*/
+        property: value;
+      }
+
+      img {
+        /*1. Add the float property and set the value to "right".*/
+        property: value;
+        /*2. Add the height property and set the value to "200px".*/
+        property: value;
+        /*3. Add the margin property and set the value to "20px".*/
+        property: value;
+      }
+
+      #history,
+      #tour,
+      #food {
+        /*1. Add the display property and set the value to "none".*/
+        property: value;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Follow the instructions in the CSS code.-->
+    <div class="header">
+      <h1>SLCC Bruins</h1>
+    </div>
+
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <a href="#" onclick="hideShow('culture')"><li>The Culture</li></a>
+          <a href="#" onclick="hideShow('history')"><li>The History</li></a>
+          <a href="#" onclick="hideShow('tour')"><li>The Tour</li></a>
+          <a href="#" onclick="hideShow('food')"><li>The Food</li></a>
+        </ul>
+      </div>
+      <div class="column content">
+        <div id="culture">
+          <img
+            src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f"
+            alt="College students at computers."
+          />
+          <h1>The Culture</h1>
+          <p>
+            We don’t just state our values; we live them through dedicated,
+            collective effort. Our values ground our future endeavors and help
+            us realize our mission of being an open-access, comprehensive
+            community college committed to the transfer education and workforce
+            needs of our students.
+          </p>
+          <p>
+            Salt Lake Community College is your community college. We engage and
+            support students in educational pathways leading to successful
+            transfer and meaningful employment.
+          </p>
+        </div>
+        <div id="history">
+          <img
+            src="https://images.unsplash.com/photo-1576568684781-f409ebf87cc3"
+            alt="College student participating in class."
+          />
+          <h1>The History</h1>
+          <p>
+            The state legislature established Salt Lake Community College in
+            1947 as a state-supported vocational school under the management and
+            control of the Utah State Board for Vocational Education. Classes
+            began in the fall of 1948. In 1978 it became part of the Utah System
+            of Higher Education under the jurisdiction of the Utah State Board
+            of Regents.
+          </p>
+          <p>
+            Currently it is the state's largest two-year college with the most
+            diverse student body. It serves more than 60,000 students on 10
+            campuses as well as through online classes.
+          </p>
+        </div>
+        <div id="tour">
+          <img
+            src="https://images.unsplash.com/photo-1461280360983-bd93eaa5051b"
+            alt="College students socializing."
+          />
+          <h1>The Tour</h1>
+          <p>
+            We would love to have you come and take a tour with us. Simply
+            contact our registration department to schedule a tour.
+          </p>
+          <p>
+            While you are here, speak to one of our advising team to learn what
+            options our institution has for you.
+          </p>
+        </div>
+        <div id="food">
+          <img
+            src="https://images.unsplash.com/photo-1517456944721-229d38679dfa"
+            alt="College food."
+          />
+          <h1>The Food</h1>
+          <p>
+            A food pavilion is available on campus. In addition, within a few
+            minutes of campus, there are a large variety of options to choose
+            from. No mater your personal taste, you are sure to find something
+            nearby to satisfy that craving.
+          </p>
+          <p>
+            Salt Lake Community College is your community college. We strive to
+            make your time hear as pleasant and meaningful as possible.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Footer Text.</p>
+    </div>
+
+    <script>
+      function hideShow(id) {
+        document.getElementById("culture").style.display = "none";
+        document.getElementById("history").style.display = "none";
+        document.getElementById("tour").style.display = "none";
+        document.getElementById("food").style.display = "none";
+        var x = document.getElementById(id);
+        if (x.style.display === "none") {
+          x.style.display = "block";
+        } else {
+          x.style.display = "none";
+        }
+      }
+    </script>
+  </body>
+</html>
