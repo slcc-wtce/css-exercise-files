@@ -1,0 +1,276 @@
+<!-- BASIC NAVBAR -->
+<!-- Start with <nav> (navigation) elements. -->
+<nav></nav>
+
+<!-- 1. Add a <ul> (unordered list) element. -->
+<nav>
+	<ul></ul>
+</nav>
+
+<!-- 2. Add three <li> (list items) elements, each containing an <a> (link) element containing the text Link 1, Link 2, and Link 3. -->
+<nav>
+	<ul>
+		<li><a href="#">Link 1</a></li>
+		<li><a href="#">Link 2</a></li>
+		<li><a href="#">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- ADD BOOTSTRAP CSS CLASSES -->
+<!-- 1. Add the class "navbar" to the <nav> element. -->
+<nav class="navbar">
+	<ul>
+		<li><a href="#">Link 1</a></li>
+		<li><a href="#">Link 2</a></li>
+		<li><a href="#">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- 2. Add the class "navbar-nav" to the <ul> element . -->
+<nav class="navbar">
+	<ul class="navbar-nav">
+		<li><a href="#">Link 1</a></li>
+		<li><a href="#">Link 2</a></li>
+		<li><a href="#">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- 3. Add the class "navbar-item" to the <li> element . -->
+<nav class="navbar">
+	<ul class="navbar-nav">
+		<li class="navbar-item"><a href="#">Link 1</a></li>
+		<li class="navbar-item"><a href="#">Link 2</a></li>
+		<li class="navbar-item"><a href="#">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- 4. Add the class "nav-link" to the <a> elements within the <li> elements. -->
+<nav class="navbar">
+	<ul class="navbar-nav">
+		<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- 5. Add the class "navbar-expand-md" to the <nav> element. -->
+<nav class="navbar navbar-expand-md">
+	<ul class="navbar-nav">
+		<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- ADD BRANDING -->
+<!-- 1. Add a <a> element below the opening <nav> element tag. -->
+<nav class="navbar navbar-expand-md">
+	<a href="#"></a>
+	<ul class="navbar-nav">
+		<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- 2. Add the class "navbar-brand" to the <a> element. -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand"></a>
+	<ul class="navbar-nav">
+		<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- 3. Add brand name or title of the website to the content of the <a> element. An image can even be added here. -->
+<!-- Code with text brand only -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<ul class="navbar-nav">
+		<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+	</ul>
+</nav>
+<!-- Code with text and image brand -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">
+		<img src="images/webdevlogo.svg" alt="Web Development Logo" height="25" />
+		My Site
+	</a>
+	<ul class="navbar-nav">
+		<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+		<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+	</ul>
+</nav>
+
+<!-- CREATE A COLLAPSING MENU -->
+<!-- 1. Enclose the <ul> element within a <div> element. -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<div>
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 2. Add the classes "collapse" and "navbar-collapse" to the <div> element. -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<div class="collapse navbar-collapse">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 3. Add the id attribute to the <div> element and set the value to anything you like. This will be used later. In this example we will set the value to "navContent". -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- CREATE A TOGGLE BUTTON TO SHOW COLLAPSED MENU -->
+<!-- 1. Add a <button> element below the brand <a> element. -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button></button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 2. Add the class "navbar-toggler" to the <button> element. -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button class="navbar-toggler"></button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 3. Add the "data-target" attribute to the <button> element, and set the value to "collapse". -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button class="navbar-toggler" data-toggle="collapse"></button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 4. Add the "data-target" attribute to the <button> element, and set the value to "collapse". -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navContent"></button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 
+    5. For accessibility, add the following attributes and values to the <button> element:
+        a. aria-controls="navContent"
+        b. area-expanded="false"
+        c. aria-label="Toggle navigation". 
+-->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" area-expanded="false" aria-label="Toggle navigation"></button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 6. In the content of the <button> element, add a <span> element. -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" area-expanded="false" aria-label="Toggle navigation">
+		<span></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- 7. Add the class "navbar-toggler-icon" to the <span> element. -->
+<nav class="navbar navbar-expand-md">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" area-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- STYLING THE NAVIGATION BAR -->
+<!-- BASIC LIGHT NAVBAR: Add the classes "navbar-light" and "bg-light" to the <nav> element. -->
+<nav class="navbar navbar-expand-md navbar-light bg-light">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" area-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
+
+<!-- BASIC DARK NAVBAR: Add the classes "navbar-dark" and "bg-dark" to the <nav> element. -->
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+	<a href="#" class="navbar-brand">My Site</a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navContent" aria-controls="navContent" area-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navContent">
+		<ul class="navbar-nav">
+			<li class="navbar-item"><a href="#" class="nav-link">Link 1</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 2</a></li>
+			<li class="navbar-item"><a href="#" class="nav-link">Link 3</a></li>
+		</ul>
+	</div>
+</nav>
