@@ -11,16 +11,16 @@
 			<label for="email">Email address:</label>
 			<input type="email" id="email" placeholder="name@example.com" name="email" />
 
-			<label for="contactBack">Can I contact you back?</label>
-			<select id="contactBack" name="contact-back">
-				<option>Yes</option>
-				<option>No</option>
-			</select>
+			<p>Can we contact you back?</p>
+			<input type="radio" name="contact-back" id="yes" value="Yes" checked />
+			<label for="yes">Yes</label>
+			<input type="radio" name="contact-back" id="no" value="No" />
+			<label for="no">No</label>
 
 			<label for="comments">Comments:</label>
 			<textarea id="comments" rows="3" name="comments"></textarea>
 
-			<button type="submit">Submit</button>
+			<button type="submit" role="button">Submit</button>
 		</form>
 	</div>
 </section>
@@ -46,16 +46,16 @@
 			<label for="email">Email address:</label>
 			<input type="email" id="email" placeholder="name@example.com" name="email" />
 
-			<label for="contactBack">Can I contact you back?</label>
-			<select id="contactBack" name="contact-back">
-				<option>Yes</option>
-				<option>No</option>
-			</select>
+			<p>Can we contact you back?</p>
+			<input type="radio" name="contact-back" id="yes" value="Yes" checked />
+			<label for="yes">Yes</label>
+			<input type="radio" name="contact-back" id="no" value="No" />
+			<label for="no">No</label>
 
 			<label for="comments">Comments:</label>
 			<textarea id="comments" rows="3" name="comments"></textarea>
 
-			<button type="submit">Submit</button>
+			<button type="submit" role="button">Submit</button>
 		</form>
 	</div>
 </section>
@@ -80,23 +80,23 @@
 					<label for="email">Email address:</label>
 					<input type="email" id="email" placeholder="name@example.com" name="email" />
 
-					<label for="contactBack">Can I contact you back?</label>
-					<select id="contactBack" name="contact-back">
-						<option>Yes</option>
-						<option>No</option>
-					</select>
+					<p>Can we contact you back?</p>
+					<input type="radio" name="contact-back" id="yes" value="Yes" checked />
+					<label for="yes">Yes</label>
+					<input type="radio" name="contact-back" id="no" value="No" />
+					<label for="no">No</label>
 
 					<label for="comments">Comments:</label>
 					<textarea id="comments" rows="3" name="comments"></textarea>
 
-					<button type="submit">Submit</button>
+					<button type="submit" role="button">Submit</button>
 				</form>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- 3. Within the <form> element, surround each <input> and their <label> (or <select> and their <label>) with a <div> element. Include the class "form-group". -->
+<!-- 3. Within the <form> element, surround each form field <input> and their <label> with a <div> element. In the case of the radio buttons, surround both buttons (the associated <input> and <label> elements), and the question above the buttons, with a <div>. Add the class attribute and set it to "form-group".  -->
 <section id="contact">
 	<div class="container my-5">
 		<!-- Section Title -->
@@ -121,11 +121,11 @@
 					</div>
 
 					<div class="form-group">
-						<label for="contactBack">Can I contact you back?</label>
-						<select id="contactBack" name="contact-back">
-							<option>Yes</option>
-							<option>No</option>
-						</select>
+						<p>Can we contact you back?</p>
+						<input type="radio" name="contact-back" id="yes" value="Yes" checked />
+						<label for="yes">Yes</label>
+						<input type="radio" name="contact-back" id="no" value="No" />
+						<label for="no">No</label>
 					</div>
 
 					<div class="form-group">
@@ -133,14 +133,62 @@
 						<textarea id="comments" rows="3" name="comments"></textarea>
 					</div>
 
-					<button type="submit">Submit</button>
+					<button type="submit" role="button">Submit</button>
 				</form>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- 4. Add the class to each <input>, <select>, and <textarea> element. Set the value to "form-control" to identify these as the form controls. -->
+<!-- 4. For the radio button form fields, surround each input and label pair with a <div> element. Set the class on each to "form-check". -->
+<section id="contact">
+	<div class="container my-5">
+		<!-- Section Title -->
+		<div class="row justify-content-center text-center">
+			<div class="col-md-6">
+				<h2 class="display-4 font-weight-bold">Contact Me</h2>
+				<hr />
+			</div>
+		</div>
+		<!-- Contact Form -->
+		<div class="row justify-content-center">
+			<div class="col-6">
+				<form action="http://form-test.slccwebdev.com/form-success.php" method="POST">
+					<div class="form-group">
+						<label for="name">Full Name:</label>
+						<input type="text" id="name" placeholder="Full Name" name="name" />
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" id="email" placeholder="name@example.com" name="email" />
+					</div>
+
+					<div class="form-group">
+						<p>Can we contact you back?</p>
+						<div class="form-check">
+							<input type="radio" name="contact-back" id="yes" value="Yes" checked />
+							<label for="yes">Yes</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" name="contact-back" id="no" value="No" />
+							<label for="no">No</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="comments">Comments:</label>
+						<textarea id="comments" rows="3" name="comments"></textarea>
+					</div>
+
+					<button type="submit" role="button">Submit</button>
+				</form>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- 5. Add the class to each <input>, and <textarea> element. Set the value for the Full Name, Email Address and Comments input fields to "form-control" to identify these as the form controls. Set the class of the radio button input fields to "form-check-input". Add the class attribute to the labels for each radio button and set their value to "form-check-label"-->
 <section id="contact">
 	<div class="container my-5">
 		<!-- Section Title -->
@@ -165,11 +213,15 @@
 					</div>
 
 					<div class="form-group">
-						<label for="contactBack">Can I contact you back?</label>
-						<select id="contactBack" class="form-control" name="contact-back">
-							<option>Yes</option>
-							<option>No</option>
-						</select>
+						<p>Can we contact you back?</p>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" name="contact-back" id="yes" value="Yes" checked />
+							<label class="form-check-label" for="yes">Yes</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" name="contact-back" id="no" value="No" />
+							<label class="form-check-label" for="no">No</label>
+						</div>
 					</div>
 
 					<div class="form-group">
@@ -177,237 +229,105 @@
 						<textarea id="comments" class="form-control" rows="3" name="comments"></textarea>
 					</div>
 
-					<button type="submit">Submit</button>
+					<button type="submit" role="button">Submit</button>
 				</form>
 			</div>
 		</div>
 	</div>
 </section>
 
-<!-- 5. Make the second level <div> element a row by adding the class "row" to the second <div> element. -->
-<header class="mainHeader">
-	<div class="container-fluid">
-		<div class="row">
-			<div>
-				<h1>Site <span>Name</span></h1>
+<!-- 6. Change the <p> elements for the radio button question to <label> elements. Set the class to "control-label".-->
+<section id="contact">
+	<div class="container my-5">
+		<!-- Section Title -->
+		<div class="row justify-content-center text-center">
+			<div class="col-md-6">
+				<h2 class="display-4 font-weight-bold">Contact Me</h2>
 				<hr />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
+			</div>
+		</div>
+		<!-- Contact Form -->
+		<div class="row justify-content-center">
+			<div class="col-6">
+				<form action="http://form-test.slccwebdev.com/form-success.php" method="POST">
+					<div class="form-group">
+						<label for="name">Full Name:</label>
+						<input type="text" class="form-control" id="name" placeholder="Full Name" name="name" />
+					</div>
+
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" />
+					</div>
+
+					<div class="form-group">
+						<label class="control-label">Can we contact you back?</label>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" name="contact-back" id="yes" value="Yes" checked />
+							<label class="form-check-label" for="yes">Yes</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" name="contact-back" id="no" value="No" />
+							<label class="form-check-label" for="no">No</label>
+						</div>
+					</div>
+
+					<div class="form-group">
+						<label for="comments">Comments:</label>
+						<textarea id="comments" class="form-control" rows="3" name="comments"></textarea>
+					</div>
+
+					<button type="submit" role="button">Submit</button>
+				</form>
 			</div>
 		</div>
 	</div>
-</header>
+</section>
 
-<!-- 6. Make the third level <div> element a column that spans 8 columns at the large breakpoint by adding the class "col-lg-8" to the third <div> element. When the screen is smaller than the large breakpoint, the element will span the entire width available. -->
-<header class="mainHeader">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-lg-8">
-				<h1>Site <span>Name</span></h1>
+<!-- 7. Add the class attribute to the <button> element. Add the classes: "btn", "btn-primary", and "mb-2".-->
+<section id="contact">
+	<div class="container my-5">
+		<!-- Section Title -->
+		<div class="row justify-content-center text-center">
+			<div class="col-md-6">
+				<h2 class="display-4 font-weight-bold">Contact Me</h2>
 				<hr />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
 			</div>
 		</div>
-	</div>
-</header>
+		<!-- Contact Form -->
+		<div class="row justify-content-center">
+			<div class="col-6">
+				<form action="http://form-test.slccwebdev.com/form-success.php" method="POST">
+					<div class="form-group">
+						<label for="name">Full Name:</label>
+						<input type="text" class="form-control" id="name" placeholder="Full Name" name="name" />
+					</div>
 
-<!-- 7. Make the height of the container and row elements 100% by adding the class "h-100 to each". -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100">
-			<div class="col-lg-8">
-				<h1>Site <span>Name</span></h1>
-				<hr />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
+					<div class="form-group">
+						<label for="email">Email address:</label>
+						<input type="email" class="form-control" id="email" placeholder="name@example.com" name="email" />
+					</div>
 
-<!-- 8. Center all the elements in the header vertically by adding the class "align-items-center" to the row element. -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center">
-			<div class="col-lg-8">
-				<h1>Site <span>Name</span></h1>
-				<hr />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
+					<div class="form-group">
+						<label class="control-label">Can we contact you back?</label>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" name="contact-back" id="yes" value="Yes" checked />
+							<label class="form-check-label" for="yes">Yes</label>
+						</div>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" name="contact-back" id="no" value="No" />
+							<label class="form-check-label" for="no">No</label>
+						</div>
+					</div>
 
-<!-- 
-	9. Center all the items in the header horizontally by adding the following classes to the row element:
-		a. "justify-content-center" to center the elements in the row
-		b. "text-center" to center the text in each element
--->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center">
-			<div class="col-lg-8">
-				<h1>Site <span>Name</span></h1>
-				<hr />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
+					<div class="form-group">
+						<label for="comments">Comments:</label>
+						<textarea id="comments" class="form-control" rows="3" name="comments"></textarea>
+					</div>
 
-<!-- 10. Make all the text in the header white so it stands out by adding the class "text-white" to the row element. -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white">
-			<div class="col-lg-8">
-				<h1>Site <span>Name</span></h1>
-				<hr />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
+					<button class="btn btn-primary mb-2" type="submit" role="button">Submit</button>
+				</form>
 			</div>
 		</div>
 	</div>
-</header>
-
-<!-- 11. Help the text to stand out a little better by adding a slightly transparent black background to the row element using the style attribute, and setting the value to "background-color: rgba(0, 0, 0, 0.2)". -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
-			<div class="col-lg-8">
-				<h1>Site <span>Name</span></h1>
-				<hr />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
-
-<!-- 12. Make the horizontal rule <hr> element white by adding the class "bg-white". -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
-			<div class="col-lg-8">
-				<h1>Site <span>Name</span></h1>
-				<hr class="bg-white" />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
-
-<!-- 13. Add a margin above and below the <hr> element by adding the class "my-5". -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
-			<div class="col-lg-8">
-				<h1>Site <span>Name</span></h1>
-				<hr class="bg-white my-5" />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
-
-<!-- 14. Emphasize the heading element by adding the class "display-1" and "font-weight-bold" to the <h1> element. -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
-			<div class="col-lg-8">
-				<h1 class="display-1 font-weight-bold">Site <span>Name</span></h1>
-				<hr class="bg-white my-5" />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
-
-<!-- 15. Create visual appeal by decreasing the font weight of the second word in the <h1> element by adding the class "font-weight-light" to the <span> element within the <h1> element. -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
-			<div class="col-lg-8">
-				<h1 class="display-1 font-weight-bold">Site <span class="font-weight-light">Name</span></h1>
-				<hr class="bg-white my-5" />
-				<p>
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
-
-<!-- 16. Set the paragraph <p> element apart by decreasing the font weight using the class "font-weight-light". -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
-			<div class="col-lg-8">
-				<h1 class="display-1 font-weight-bold">Site <span class="font-weight-light">Name</span></h1>
-				<hr class="bg-white my-5" />
-				<p class="font-weight-light">
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
-
-<!-- 17. Make the link <a> element a blue button by adding the "btn" and "btn-primary" classes. -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
-			<div class="col-lg-8">
-				<h1 class="display-1 font-weight-bold">Site <span class="font-weight-light">Name</span></h1>
-				<hr class="bg-white my-5" />
-				<p class="font-weight-light">
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about" class="btn btn-primary">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
-
-<!-- 18. Make the link button larger by adding the "btn-lg" class. Also, add the "mt-3" class to the button to increase the top margin. -->
-<header class="mainHeader">
-	<div class="container-fluid h-100">
-		<div class="row h-100 align-items-center justify-content-center text-center text-white" style="background-color: rgba(0, 0, 0, 0.2);">
-			<div class="col-lg-8">
-				<h1 class="display-1 font-weight-bold">Site <span class="font-weight-light">Name</span></h1>
-				<hr class="bg-white my-5" />
-				<p class="font-weight-light">
-					This can be the site slogan, or a brief description of the site. This can also be a call to action used to grab the attention of the visitors and get them to click on the link below.
-				</p>
-				<a href="#about" class="btn btn-primary btn-lg mt-3">Find Out More</a>
-			</div>
-		</div>
-	</div>
-</header>
+</section>

@@ -36,7 +36,10 @@
 			<div class="container-fluid h-100">
 				<div class="row align-items-center justify-content-center text-center text-white h-100" style="background-color: rgba(0, 0, 0, 0.2);">
 					<div class="col-lg-8">
-						<h1 class="display-1 font-weight-bold">Site <span class="font-weight-light">Name</span></h1>
+						<h1 class="display-1 font-weight-bold">
+							Site
+							<span class="font-weight-light">Name</span>
+						</h1>
 
 						<hr class="my-4 bg-white" />
 
@@ -95,8 +98,8 @@
 								<hr class="bg-primary" />
 								<p class="card-text">
 									This is a brief description of this portfolio item. This can describe th work, provide steps taken, or give a summary of responsibilities. The optional link at the bottom could navigate to a page providing more details.
-						</p>
-					</div>
+								</p>
+							</div>
 							<!-- Optional Link -->
 							<div class="card-footer">
 								<a class="btn btn-outline-primary btn-lg mt-2" role="button" href="#about">Read More</a>
@@ -118,8 +121,8 @@
 								<hr class="bg-primary" />
 								<p class="card-text">
 									This is a brief description of this portfolio item. This can describe th work, provide steps taken, or give a summary of responsibilities. The optional link at the bottom could navigate to a page providing more details.
-						</p>
-					</div>
+								</p>
+							</div>
 							<!-- Optional Link -->
 							<div class="card-footer">
 								<a class="btn btn-outline-primary btn-lg mt-2" role="button" href="#about">Read More</a>
@@ -141,8 +144,8 @@
 								<hr class="bg-primary" />
 								<p class="card-text">
 									This is a brief description of this portfolio item. This can describe th work, provide steps taken, or give a summary of responsibilities. The optional link at the bottom could navigate to a page providing more details.
-						</p>
-					</div>
+								</p>
+							</div>
 							<!-- Optional Link -->
 							<div class="card-footer">
 								<a class="btn btn-outline-primary btn-lg mt-2" role="button" href="#about">Read More</a>
@@ -153,30 +156,30 @@
 					<!-- Portfolio Item End -->
 				</div>
 				<!-- Portfolio Items Row End -->
-				</div>
+			</div>
 		</section>
 
 		<!-- Contact Form -->
 		<section id="contact">
-			<div class="container  my-5">
+			<div class="container my-5">
+				<!-- Contact Form -->
 				<form action="http://form-test.slccwebdev.com/form-success.php" method="POST">
-					
-						<label for="fullName">Full Name:</label>
-						<input type="text" class="form-control" id="fullName" placeholder="Full Name" name="name">
-					
-						<label for="emailAddress">Email address:</label>
-						<input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" name="email">
-					
-						<label for="contactBack">Can I contact you back?</label>
-						<select class="form-control" id="contactBack" name="contact-back">
-							<option>Yes</option>
-							<option>No</option>
-						</select>
-					
-						<label for="emailBody">Comments:</label>
-						<textarea class="form-control" id="emailBody" rows="3" name="comments"></textarea>
-					
-					<button type="submit" class="btn btn-primary mb-2">Submit</button>
+					<label for="name">Full Name:</label>
+					<input type="text" id="name" placeholder="Full Name" name="name" />
+
+					<label for="email">Email address:</label>
+					<input type="email" id="email" placeholder="name@example.com" name="email" />
+
+					<p>Can we contact you back?</p>
+					<input type="radio" name="contact-back" id="yes" value="Yes" checked />
+					<label for="yes">Yes</label>
+					<input type="radio" name="contact-back" id="no" value="No" />
+					<label for="no">No</label>
+
+					<label for="comments">Comments:</label>
+					<textarea id="comments" rows="3" name="comments"></textarea>
+
+					<button type="submit" role="button">Submit</button>
 				</form>
 			</div>
 		</section>
